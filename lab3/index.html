@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Сайт цирка</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header-title">Сильнейший клоун</h1>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <img src="clownade.JPG" alt="Clown pic" class="avatar" />
+        <h2>Добро пожаловать в мой цирк!</h2>
+        <p>
+          Приветствую, путник! Я - клоун. Я студент Московского Технического Университета Связи и Информатики.
+          Добро пожаловать в мой личный цирк, где ты можешь узнать немного обо мне.
+        </p>
+        <h4>Контактики и связи:</h4>
+        <div class="card bg-green">      
+               <a href="https://github.com/br0kenr1bs">
+          <h3>@brxken_ribs </h3> </a>
+            <a href="https://t.me/brxken_ribs">
+          <h3>Mr.Brxken_ribs</h3> </a>
+        </div>
+        
+        <br/>
+
+        <button class="toggle-button" onclick="togglePortfolio()">
+          Досье
+        </button>
+        <div class="portfolio-menu" id="portfolioMenu">
+          <p>Зацени мой цирк:</p>
+          <ul>
+              <a href=https://github.com/br0kenr1bs/Lab_2_VViT>
+                Выступление №2
+              </a>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Вас нахитрили :></p>
+    </footer>
+    <script>
+      function togglePortfolio() {
+        var portfolioMenu = document.getElementById("portfolioMenu");
+        if (portfolioMenu.style.display === "none") {
+          portfolioMenu.style.display = "block";
+        } else {
+          portfolioMenu.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
